@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 //credits: V.037_
 
-public class Test : MonoBehaviour
+public class LoopExamples : MonoBehaviour
 {
     [SerializeField]
     private bool useGoodLoop;
@@ -16,7 +14,7 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if(!useGoodLoop)                    //loop example n.1
+        if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
             for (int i = 0 ; i < 1; i++)    //"i" will get deleted every frame in Update() instance so... it will remain 0
             {                               //btw i < 5 it's the condition and the number of times you want to use for execute the loop
@@ -26,7 +24,7 @@ public class Test : MonoBehaviour
         }
         else
         {
-            loopVoid();                  //call loopVoid void
+            loopVoid();                  //call loopVoid void - if usefoodloop is false then we use the good example
         }
     }
 
