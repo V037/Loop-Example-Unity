@@ -16,7 +16,7 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if(!useGoodLoop)
+        if(!useGoodLoop)                    //loop example n.1
         {
             for (int i = 0 ; i < 1; i++)    //"i" will get deleted every frame in Update() instance so... it will remain 0
             {                               //btw i < 5 it's the condition and the number of times you want to use for execute the loop
@@ -26,11 +26,11 @@ public class Test : MonoBehaviour
         }
         else
         {
-            realForLoop();                  //call realForLoop void
+            loopVoid();                  //call loopVoid void
         }
     }
 
-    private void realForLoop()
+    private void loopVoid()        //loop example n.2
     {
         while(goodnum < 100)        //nice loop
         {
