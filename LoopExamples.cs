@@ -31,9 +31,10 @@ public class LoopExamples : MonoBehaviour
 
         
         //GOOD LOOP - EXAMPLE N.2
-        if(useGoodLoop)
+        if(useGoodLoop)    //if condition... level easy
         {
             goodnum++;    //basically this add 1
+            Debug.Log(goodnum);  
         }
     }
 
@@ -41,10 +42,10 @@ public class LoopExamples : MonoBehaviour
     {
     
         //GOOD LOOP - EXAMPLE N.3 
-        while(goodnum2 < 100)        //nice loop
+        while(goodnum2 < 100)        //nice loop, while condition.... less easy but still easy
         {
             goodnum2++;            //adding 1 every time this function loopVoid() is called
-            Debug.Log(goodnum);     
+            Debug.Log(goodnum2);     
         }
     }
 }
