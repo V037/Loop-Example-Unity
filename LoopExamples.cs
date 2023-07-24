@@ -9,10 +9,11 @@ public class LoopExamples : MonoBehaviour
     public int num;        //variable. you can see variables in the inspector window when they're public
 
     public int goodnum;    //variable
+    public int goodnum2;    //variable
 
     void Update()                    //you're calling this function for every frame your game renders
     {
-        //BAD LOOP EXAMPLE - NOT EFFICIENT
+        //BAD LOOP - EXAMPLE N.1
         if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
             for (int i = 0 ; i < 1; i++)    //"i" will get deleted every frame in Update() instance so... it will remain 0
@@ -21,15 +22,20 @@ public class LoopExamples : MonoBehaviour
                 Debug.Log(i);               //If you need to change "i", don't do that ok? (^,^)
             }
         }
-        else
+        else            
         {
             loopVoid();                  //call loopVoid void - if usefoodloop is false then we use the good example
         }
+        //GOOD LOOP - EXAMPLE N.2
+        if(useGoodLoop)
+        {
+            goodnum2
+        }
     }
 
-    void loopVoid()        //loop example n.2
+    void loopVoid()
     {
-        //GOOD LOOP EXAMPLE - GOOD
+        //GOOD LOOP - EXAMPLE N.3 
         while(goodnum < 100)        //nice loop
         {
             goodnum++;            //adding 1 every time this function loopVoid() is called
