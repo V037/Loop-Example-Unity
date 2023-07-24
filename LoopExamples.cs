@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class LoopExamples : MonoBehaviour
 {
-    [SerializeField]
-    private bool useGoodLoop;
+    public bool useGoodLoop;
 
-    [SerializeField]
-    private int num;        //inspector variable debug
-    [SerializeField]
-    private int goodnum;    //inspector variable debug
+    public int num;        //inspector variable debug
 
-    private void Update()
+    public int goodnum;    //inspector variable debug
+
+    private void Update()                    //you're calling this function every frame your game renders
     {
         if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
