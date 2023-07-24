@@ -29,16 +29,16 @@ public class LoopExamples : MonoBehaviour
         //GOOD LOOP - EXAMPLE N.2
         if(useGoodLoop)
         {
-            goodnum2
+            goodnum++;
         }
     }
 
     void loopVoid()
     {
         //GOOD LOOP - EXAMPLE N.3 
-        while(goodnum < 100)        //nice loop
+        while(goodnum2 < 100)        //nice loop
         {
-            goodnum++;            //adding 1 every time this function loopVoid() is called
+            goodnum2++;            //adding 1 every time this function loopVoid() is called
             Debug.Log(goodnum);     //printing the num in the console
         }
     }
