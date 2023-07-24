@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class LoopExamples : MonoBehaviour
 {
-    public bool useGoodLoop;
+    public bool useGoodLoop;  //variable
 
-    public int num;        //inspector variable debug
+    public int num;        //variable you can see these in the inspector window
 
-    public int goodnum;    //inspector variable debug
+    public int goodnum;    //variable
 
-    void Update()                    //you're calling this function every frame your game renders
+    void Update()                    //you're calling this function for every frame your game renders
     {
         if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
