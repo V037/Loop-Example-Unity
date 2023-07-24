@@ -10,7 +10,7 @@ public class LoopExamples : MonoBehaviour
 
     public int goodnum;    //inspector variable debug
 
-    private void Update()                    //you're calling this function every frame your game renders
+    void Update()                    //you're calling this function every frame your game renders
     {
         if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
@@ -26,7 +26,7 @@ public class LoopExamples : MonoBehaviour
         }
     }
 
-    private void loopVoid()        //loop example n.2
+    void loopVoid()        //loop example n.2
     {
         while(goodnum < 100)        //nice loop
         {
