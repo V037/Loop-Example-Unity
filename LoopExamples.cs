@@ -6,7 +6,7 @@ public class LoopExamples : MonoBehaviour
 {
     public bool useGoodLoop;  //variable
 
-    public int num;        //variable you can see these in the inspector window
+    public int num;        //variable. you can see variables in the inspector window when they're public
 
     public int goodnum;    //variable
 
