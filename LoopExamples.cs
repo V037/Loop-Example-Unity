@@ -12,6 +12,7 @@ public class LoopExamples : MonoBehaviour
 
     void Update()                    //you're calling this function for every frame your game renders
     {
+        //BAD LOOP EXAMPLE - NOT EFFICIENT
         if(!useGoodLoop)                    //loop example n.1 - if usefoodloop is false then we use the bad example
         {
             for (int i = 0 ; i < 1; i++)    //"i" will get deleted every frame in Update() instance so... it will remain 0
@@ -28,10 +29,11 @@ public class LoopExamples : MonoBehaviour
 
     void loopVoid()        //loop example n.2
     {
+        //GOOD LOOP EXAMPLE - GOOD
         while(goodnum < 100)        //nice loop
         {
-            goodnum++;
-            Debug.Log(goodnum);     
+            goodnum++;            //adding 1 every time this function loopVoid() is called
+            Debug.Log(goodnum);     //printing the num in the console
         }
     }
 }
